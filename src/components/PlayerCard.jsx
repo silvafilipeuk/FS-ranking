@@ -19,9 +19,6 @@ function PlayerCard({ player }) {
 			</Typography>
 			<Typography sx={{ p: 1 }}>{player.nickname}</Typography>
 			<Typography sx={{ p: 1 }}>
-				<Typography sx={{ color: "secondary.main", p: 0 }}>
-					Rating:
-				</Typography>{" "}
 				{player.rating}
 			</Typography>
 			<Typography
@@ -36,9 +33,6 @@ function PlayerCard({ player }) {
 					},
 				}}
 			>
-				<Typography sx={{ color: "pink.main", p: 0 }}>
-					Highest Rating:
-				</Typography>{" "}
 				{player.highestrating}
 			</Typography>
 			<Typography
@@ -53,9 +47,6 @@ function PlayerCard({ player }) {
 					},
 				}}
 			>
-				<Typography sx={{ color: "darkGreen.main", p: 0 }}>
-					Wins:
-				</Typography>{" "}
 				{player.wins}
 			</Typography>
 			<Typography
@@ -70,9 +61,6 @@ function PlayerCard({ player }) {
 					},
 				}}
 			>
-				<Typography sx={{ color: "primary.main", p: 0 }}>
-					Losses:
-				</Typography>{" "}
 				{player.losses}
 			</Typography>
 			<Typography
@@ -87,9 +75,6 @@ function PlayerCard({ player }) {
 					},
 				}}
 			>
-				<Typography sx={{ color: "yellow.dark", p: 0 }}>
-					Streak:
-				</Typography>{" "}
 				{player.streak}
 			</Typography>
 		</>

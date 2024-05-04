@@ -18,7 +18,12 @@ function App() {
 	useEffect(() => {
 		setIsLoading(true);
 		apiCall.get(displayRank).then((ranking) => {
-			setRanking(ranking.data);
+			setRanking(ranking.data.map((item, index) => {
+				return {
+					ranking: index + 1,
+					...item
+				}
+			}));
 			setIsLoading(false);
 		});
 	}, [displayRank]);
