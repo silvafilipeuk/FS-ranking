@@ -95,7 +95,7 @@ function Leaderboard({ loading, displayRank, ranking }) {
 						},
 					}}
 					alt="The FellowSheep gaming logo!"
-					src="../src/assets/Logo_FellowSheep.png"
+					src="./assets/Logo_FellowSheep.png"
 				/>
 				<Typography sx={{ pb: 5, fontWeight: "bold" }}>
 					FellowSheep Gaming Leaderboard -{rankingName()}
