@@ -12,7 +12,7 @@ function App() {
 
 	const apiCall = axios.create({
 		baseURL: "https://filipedasilva.co.uk/api/",
-		headers: { "X-Custom-Header": "foobar" },
+		headers: { "X-Custom-Header": "fsranking" },
 	});
 
 	useEffect(() => {
