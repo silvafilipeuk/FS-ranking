@@ -3,7 +3,7 @@ import PlayerCard from "./PlayerCard";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import TextField from "@mui/material/TextField";
-import { Paper } from "@mui/material";
+import { Paper, Box } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import Loading from "./Loading";
 import SortColumn from "./SortColumn";
@@ -66,9 +66,41 @@ function Leaderboard({ loading, displayRank, ranking }) {
 
 	return (
 		<>
-			<Typography sx={{ pb: 5, fontWeight: "bold" }}>
-				FellowSheep Gaming Leaderboard -{rankingName()}
-			</Typography>
+			<Box
+				sx={{
+					gridTemplateColumns: "1frr",
+					gridTemplateRows: "1fr 1fr",
+					justifyContent: "center",
+					alignItems: "center",
+				}}
+			>
+				<Box
+					component="img"
+					sx={{
+						height: 120,
+						width: 120,
+						maxHeight: {
+							xs: 70,
+							sm: 70,
+							md: 70,
+							lg: 150,
+							xl: 150,
+						},
+						maxWidth: {
+							xs: 70,
+							sm: 70,
+							md: 70,
+							lg: 150,
+							xl: 150,
+						},
+					}}
+					alt="The FellowSheep gaming logo!"
+					src="src/assets/Logo_FellowSheep.png"
+				/>
+				<Typography sx={{ pb: 5, fontWeight: "bold" }}>
+					FellowSheep Gaming Leaderboard -{rankingName()}
+				</Typography>
+			</Box>
 
 			<TextField
 				label="Busca por nome do jogador:"

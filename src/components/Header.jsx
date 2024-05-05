@@ -8,7 +8,7 @@ function header({ setDisplayRank }) {
 		<Box
 			sx={{
 				display: "flex",
-				justifyContent: "center",
+				justifyContent: "flex-start",
 				flexDirection: {
 					display: {
 						xs: "column",
