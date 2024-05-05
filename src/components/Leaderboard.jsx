@@ -112,10 +112,11 @@ function Leaderboard({ loading, displayRank, ranking }) {
 					>
 						<ListItem
 							sx={{
+								m: 1,
 								display: "grid",
 								gridTemplateColumns: {
-									xs: "15% 1fr 1fr",
-									sm: "10% 1fr 1fr",
+									xs: "15% 0% 1fr 1fr",
+									sm: "10% 0% 1fr 1fr",
 									md: "7% 7% repeat(6, 1fr)",
 									lg: "7% 7% repeat(6, 1fr)",
 									xl: "7% 7% repeat(6, 1fr)",
