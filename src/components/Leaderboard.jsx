@@ -7,6 +7,7 @@ import { Paper, Box } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import Loading from "./Loading";
 import SortColumn from "./SortColumn";
+import logo from "../assets/Logo_FellowSheep.png";
 
 function Leaderboard({ loading, displayRank, ranking }) {
 	const [search, setSearch] = useState("");
@@ -95,7 +96,7 @@ function Leaderboard({ loading, displayRank, ranking }) {
 						},
 					}}
 					alt="The FellowSheep gaming logo!"
-					src="../src/assets/Logo_FellowSheep.png"
+					src={logo}
 				/>
 				<Typography sx={{ pb: 5, fontWeight: "bold" }}>
 					FellowSheep Gaming Leaderboard -{rankingName()}
