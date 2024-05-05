@@ -12,8 +12,8 @@ function header({ setDisplayRank }) {
 				flexDirection: {
 					display: {
 						xs: "column",
-						sm: "row",
-						md: "row",
+						sm: "column",
+						md: "column",
 						lg: "row",
 						xl: "row",
 					},
@@ -28,7 +28,8 @@ function header({ setDisplayRank }) {
 				variant="contained"
 				endIcon={<SportsEsportsIcon />}
 				sx={{
-					width: { xs: "50vw", sm: "30 vw", md: "20vw" },
+					width: { xs: "55vw", sm: "30 vw", md: "20vw", lg: "15vw" },
+					height: "5vh",
 					m: 1,
 					bgcolor: "primary.main",
 					color: "white",
@@ -44,7 +45,8 @@ function header({ setDisplayRank }) {
 				variant="contained"
 				endIcon={<VideogameAssetIcon />}
 				sx={{
-					width: { xs: "50vw", sm: "30 vw", md: "20vw" },
+					width: { xs: "55vw", sm: "30 vw", md: "20vw", lg: "15vw" },
+					height: "5vh",
 					m: 1,
 					bgcolor: "primary.main",
 					color: "white",
@@ -52,6 +54,23 @@ function header({ setDisplayRank }) {
 				}}
 			>
 				Fs TG Leaderboard
+			</Button>
+			<Button
+				onClick={() => {
+					setDisplayRank("rankFSEw");
+				}}
+				variant="contained"
+				endIcon={<SportsEsportsIcon />}
+				sx={{
+					width: { xs: "55vw", sm: "30 vw", md: "20vw", lg: "15vw" },
+					height: "5vh",
+					m: 1,
+					bgcolor: "primary.main",
+					color: "white",
+					fontWeight: "bold",
+				}}
+			>
+				EW RedBull Leaderboard
 			</Button>
 		</Box>
 	);

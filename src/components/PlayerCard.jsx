@@ -18,9 +18,7 @@ function PlayerCard({ player }) {
 				{getUnicodeFlagIcon(player.country)}
 			</Typography>
 			<Typography sx={{ p: 1 }}>{player.nickname}</Typography>
-			<Typography sx={{ p: 1 }}>
-				{player.rating}
-			</Typography>
+			<Typography sx={{ p: 1 }}>{player.rating}</Typography>
 			<Typography
 				sx={{
 					p: 1,
